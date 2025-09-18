@@ -1,69 +1,47 @@
-# React + TypeScript + Vite
+# 🛠️ Mushin - Digital Weld Analytics Dashboard (UI Only)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **UI dashboard** built for **digital weld analytics**.  
+This project demonstrates an industrial production monitoring dashboard UI with metrics like OEE (Overall Equipment Efficiency), Production Losses, Line Defects, and more.  
 
-Currently, two official plugins are available:
+🚀 **Live Demo:** [mushin-xgnl.vercel.app](https://mushin-xgnl.vercel.app/)  
+📂 **GitHub Repo:** [github.com/kanakver/mushin](https://github.com/kanakver/mushin)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
+![Dashboard Preview](./preview.png)  
+*(Replace with actual screenshot if available in repo)*
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Features
+- 📊 **Dashboard UI** for monitoring industrial KPIs  
+- 🔍 **Today's Line Metrics** with OEE, Availability, Performance, and Quality  
+- 📈 **Charts & Graphs** for production efficiency, total production, and losses  
+- 🖥️ **Side Navigation Menu** with sections for Maintenance, EOL, PDI, Line Defects, and more  
+- 📅 **Day-wise & Monthly Trends** with analytics visualization  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🏗️ Tech Stack
+- ⚛️ **React.js** – Component-based UI  
+- 🎨 **Tailwind CSS** – Clean & responsive design  
+- 📦 **Vercel** – Deployment and hosting  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Installation & Setup
+Clone the repo and run locally:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+# Clone the repository
+git clone https://github.com/kanakver/mushin.git
+
+# Navigate into the project folder
+cd mushin
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
