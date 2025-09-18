@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar"
 import Sidebar from "./components/Sidebar"
 import Dashboard from "./pages/Dashboard"
-import "./App.css"
+
 
 export default function App() {
 	return (
