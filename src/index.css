@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@layer utilities {
+	.h-25 { height: 6.25rem; } /* 100px */
+	.h-30 { height: 7.5rem; }  /* 120px */
+}
